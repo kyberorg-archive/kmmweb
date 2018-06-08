@@ -30,7 +30,7 @@ public class KMMWebUI extends UI {
     }
 
     private void addHeader() {
-        Label mainLabel = new Label("KMyMoney Web");
+        Label mainLabel = new Label("AppOne");
         mainLabel.setStyleName(ValoTheme.LABEL_H1);
         mainLabel.setSizeUndefined();
         mainLayout.addComponent(mainLabel);
