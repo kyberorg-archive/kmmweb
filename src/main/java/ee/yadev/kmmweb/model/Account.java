@@ -1,5 +1,7 @@
 package ee.yadev.kmmweb.model;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -17,11 +19,9 @@ public class Account {
     private String institutionId;
     private String parentId;
 
-    //FIXME Timestamp
     private String lastReconciled;
     private String lastModified;
 
-    //FIXME unparseable Data
     private String openingDate;
 
     private String accountNumber;
