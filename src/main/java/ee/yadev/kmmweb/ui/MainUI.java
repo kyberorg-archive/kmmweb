@@ -6,6 +6,7 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
+import ee.yadev.kmmweb.service.PayeeService;
 import ee.yadev.kmmweb.ui.elements.AccountList;
 import ee.yadev.kmmweb.ui.payee.PayeeList;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,9 @@ public class MainUI extends UI {
 
     @Autowired
     private PayeeList payeeList;
+
+    @Autowired
+    private PayeeService payeeService;
 
     @Override
     protected void init(VaadinRequest request) {
@@ -53,6 +57,12 @@ public class MainUI extends UI {
         Button addPayeeButton = new Button();
         addPayeeButton.setIcon(VaadinIcons.PLUS_CIRCLE);
         addPayeeButton.addStyleName(ValoTheme.BUTTON_PRIMARY);
+        addPayeeButton.addClickListener(click -> {
+            payeeService.addPayee(payeeInput.getValue());
+            payeeInput.clear();
+            payeeInput.focus();
+
+        });
 
         form.addComponents(payeeInput, addPayeeButton);
         form.setExpandRatio(payeeInput, 1);
