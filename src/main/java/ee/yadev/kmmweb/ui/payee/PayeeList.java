@@ -27,6 +27,6 @@ public class PayeeList extends VerticalLayout {
 
     private void setContent(List<Payee> allPayees) {
         removeAllComponents();
-        allPayees.forEach(payee -> addComponent(new PayeeItem(payee)));
+        allPayees.forEach(payee -> addComponent(new PayeeRow(new PayeeItem(payee))));
     }
 }
