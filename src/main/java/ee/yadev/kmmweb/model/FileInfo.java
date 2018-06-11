@@ -2,7 +2,9 @@ package ee.yadev.kmmweb.model;
 
 import lombok.Data;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -17,6 +19,10 @@ import java.sql.Timestamp;
 @Data
 @Table(name = "kmmFileInfo")
 public class FileInfo {
+
+    @Id
+    @Column(name = "ROWID")
+    private String rowId;
 
     private String version;
 
