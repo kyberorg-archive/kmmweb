@@ -7,11 +7,12 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
+import ee.yadev.kmmweb.ui.elements.AccountList;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringUI
 @Theme("valo")
-public class KMMWebUI extends UI {
+public class MainUI extends UI {
     private VerticalLayout mainLayout;
 
     @Autowired

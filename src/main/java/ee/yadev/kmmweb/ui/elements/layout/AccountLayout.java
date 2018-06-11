@@ -1,4 +1,4 @@
-package ee.yadev.kmmweb.ui.layout;
+package ee.yadev.kmmweb.ui.elements.layout;
 
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.HorizontalLayout;
