@@ -8,6 +8,7 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 import ee.yadev.kmmweb.ui.elements.AccountList;
+import ee.yadev.kmmweb.ui.payee.PayeeList;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringUI
@@ -17,6 +18,9 @@ public class MainUI extends UI {
 
     @Autowired
     private AccountList accountList;
+
+    @Autowired
+    private PayeeList payeeList;
 
     @Override
     protected void init(VaadinRequest request) {
@@ -38,7 +42,13 @@ public class MainUI extends UI {
     }
 
     private void addBody() {
-         mainLayout.addComponent(accountList);
+        Label accountLabel = new Label("Accounts");
+        accountLabel.setStyleName(ValoTheme.LABEL_H3);
+
+        Label payeeLabel = new Label("Payees");
+        payeeLabel.setStyleName(ValoTheme.LABEL_H3);
+
+        mainLayout.addComponents(payeeLabel, payeeList);
     }
 
 }
