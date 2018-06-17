@@ -1,10 +1,6 @@
-package ee.yadev.kmmweb.model;
-
-import org.hibernate.annotations.Type;
+package ee.yadev.yamt.model;
 
 import javax.persistence.*;
-import java.sql.Date;
-import java.sql.Timestamp;
 
 @Entity
 @Table(name = "kmmAccounts")

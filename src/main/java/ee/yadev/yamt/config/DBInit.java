@@ -1,13 +1,10 @@
-package ee.yadev.kmmweb.config;
+package ee.yadev.yamt.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
 
 @Configuration
 public class DBInit {

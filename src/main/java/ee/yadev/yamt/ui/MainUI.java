@@ -1,4 +1,4 @@
-package ee.yadev.kmmweb.ui;
+package ee.yadev.yamt.ui;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;
@@ -7,7 +7,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
-import ee.yadev.kmmweb.ui.elements.AccountList;
+import ee.yadev.yamt.ui.elements.AccountList;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringUI
@@ -31,14 +31,14 @@ public class MainUI extends UI {
     }
 
     private void addHeader() {
-        Label mainLabel = new Label("AppOne");
+        Label mainLabel = new Label(System.getProperty("app.name", "Yet another money tracker"));
         mainLabel.setStyleName(ValoTheme.LABEL_H1);
         mainLabel.setSizeUndefined();
         mainLayout.addComponent(mainLabel);
     }
 
     private void addBody() {
-         mainLayout.addComponent(accountList);
+        mainLayout.addComponent(accountList);
     }
 
 }

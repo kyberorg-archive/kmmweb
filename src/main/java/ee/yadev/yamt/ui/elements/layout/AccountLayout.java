@@ -1,9 +1,9 @@
-package ee.yadev.kmmweb.ui.elements.layout;
+package ee.yadev.yamt.ui.elements.layout;
 
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
-import ee.yadev.kmmweb.model.Account;
+import ee.yadev.yamt.model.Account;
 
 public class AccountLayout extends HorizontalLayout {
     public AccountLayout(Account account) {

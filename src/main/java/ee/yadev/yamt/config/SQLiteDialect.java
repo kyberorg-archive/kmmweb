@@ -1,4 +1,4 @@
-package ee.yadev.kmmweb.config;
+package ee.yadev.yamt.config;
 
 import java.sql.Types;
 

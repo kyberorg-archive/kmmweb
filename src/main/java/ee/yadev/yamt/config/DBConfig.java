@@ -1,4 +1,4 @@
-package ee.yadev.kmmweb.config;
+package ee.yadev.yamt.config;
 
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;

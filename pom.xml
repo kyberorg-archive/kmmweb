@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ee.yadev</groupId>
-	<artifactId>kmmweb</artifactId>
+	<artifactId>yamt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>kmmweb</name>
-	<description>KMyMoney Web</description>
+	<name>yamt</name>
+	<description>Yet Another Money Tracker</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

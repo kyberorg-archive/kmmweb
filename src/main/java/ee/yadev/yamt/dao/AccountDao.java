@@ -1,6 +1,7 @@
-package ee.yadev.kmmweb.dao;
+package ee.yadev.yamt.dao;
 
-import ee.yadev.kmmweb.model.Account;
+
+import ee.yadev.yamt.model.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 

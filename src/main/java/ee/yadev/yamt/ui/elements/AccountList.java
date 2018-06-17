@@ -1,9 +1,9 @@
-package ee.yadev.kmmweb.ui.elements;
+package ee.yadev.yamt.ui.elements;
 
 import com.vaadin.ui.VerticalLayout;
-import ee.yadev.kmmweb.dao.AccountDao;
-import ee.yadev.kmmweb.model.Account;
-import ee.yadev.kmmweb.ui.elements.layout.AccountLayout;
+import ee.yadev.yamt.dao.AccountDao;
+import ee.yadev.yamt.model.Account;
+import ee.yadev.yamt.ui.elements.layout.AccountLayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

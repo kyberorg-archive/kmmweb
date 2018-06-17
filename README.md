@@ -1,5 +1,5 @@
-# KMyMoney Web
-Yet another attempt to make kMyMoney web interface
+# YAMT
+Yet another Money Tracker
 
 ## Technologies used
 Spring Boot, Vaadin
